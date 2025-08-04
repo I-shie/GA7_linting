@@ -2,7 +2,7 @@ name: Linting
 on: [push]
 jobs:
   Lint:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       -  name: checkout@v2
          uses: actions/checkout@v2
