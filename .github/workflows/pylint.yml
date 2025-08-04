@@ -14,7 +14,7 @@ jobs:
          run: cat main.py
       -  name: lint
          run: |
-           -  pip install pylint
+           -  pip3 install pylint
            -  pylint main.py
       
          
