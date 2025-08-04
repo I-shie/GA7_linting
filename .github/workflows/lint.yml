@@ -1,0 +1,14 @@
+name: Linting
+on: [push]
+jobs:
+  Lint:
+    runs-on: windows-latest
+    steps:
+      -  name: checkout@v2
+         uses: actions/checkout@v2
+         with:
+           name: Namisha0610/Cat-Photo-App
+           ref: main
+           path: ./photo-app
+      - name: Print photo-app dir
+        run: ls ./photot-app
