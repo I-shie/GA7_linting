@@ -14,3 +14,7 @@ jobs:
          run: ls ./photo-app
       -  name: Print Code
          run: cat ./photo-app/index.html
+      -  name: Broken Link Checking
+         uses: lycheeverse/lychee-action@2.4.1
+         with:
+           workingDirectory: ./photo-app
