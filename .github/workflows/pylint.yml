@@ -1,0 +1,19 @@
+name: Python lint
+on: [push]
+jobs:
+  lint-py:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: checkout
+         uses: actions/checkout@v2
+         with:
+           repository: I-shie/python-test1
+           ref: main
+           path: ./pycode
+      -  name: print code
+         run: cat ./pycode/main.py
+      -  name: lint
+         uses: colevandersWands/run_pylint@v1.0.2
+         with:
+           src: ./pycode
+         
