@@ -17,4 +17,5 @@ jobs:
       -  name: Broken Link Checking
          uses: ruzickap/action-my-broken-link-checker@v1.0.3
          with:
-           pages_path: ./photo-app
+           pages_path: .
+           url: https://github.com/Namisha0610/Cat-Photo-App
