@@ -9,11 +9,11 @@ jobs:
          with:
            repository: I-shie/python-test1
            ref: main
-           path: ./pycode
+           path: .
       -  name: print code
          run: cat ./pycode/main.py
       -  name: lint
          uses: colevandersWands/run_pylint@v1.0.2
          with:
-           src: pycode/main.py
+           src: main.py
          
