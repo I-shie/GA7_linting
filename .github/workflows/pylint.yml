@@ -13,7 +13,8 @@ jobs:
       -  name: print code
          run: cat main.py
       -  name: lint
-         uses: colevandersWands/run_pylint@v1.0.2
-         with:
-           src: main.py
+         run: |
+           -  pip install pylint
+           -  pylint main.py
+      
          
