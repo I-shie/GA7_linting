@@ -7,8 +7,8 @@ jobs:
       -  name: checkout@v2
          uses: actions/checkout@v2
          with:
-           name: Namisha0610/Cat-Photo-App
+           repository: Namisha0610/Cat-Photo-App
            ref: main
            path: ./photo-app
       - name: Print photo-app dir
-        run: ls ./photot-app
+        run: ls ./photo-app
