@@ -10,5 +10,7 @@ jobs:
            repository: Namisha0610/Cat-Photo-App
            ref: main
            path: ./photo-app
-      - name: Print photo-app dir
-        run: ls ./photo-app
+      -  name: Print photo-app dir
+         run: ls ./photo-app
+      -  name: Print Code
+         run: cat ./photo-app/index.html
