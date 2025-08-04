@@ -11,7 +11,7 @@ jobs:
            ref: main
            path: .
       -  name: print code
-         run: cat ./pycode/main.py
+         run: cat main.py
       -  name: lint
          uses: colevandersWands/run_pylint@v1.0.2
          with:
