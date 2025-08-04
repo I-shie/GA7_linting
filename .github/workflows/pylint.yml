@@ -15,6 +15,6 @@ jobs:
       -  name: lint
          run: |
            pip3 install pylint
-           python pylint main.py
+           python -m pylint main.py
       
          
